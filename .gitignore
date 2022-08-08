@@ -333,3 +333,4 @@ ASALocalRun/
 .mypy_cache/
 credentials.json
 secret.yaml
+.gcloudignore

@@ -18,13 +18,13 @@ db = firestore.client()
 app = FastAPI()
 
 
-@app.get("/health")
-def health():
+@app.get("/")
+def read_root():
     return {"status": "ok"}
 
 
-@app.get("/search/{site}")
-def search(site: str, q: str = ""):
+@app.get("/search")
+def search(site: str = "google", q: str = ""):
     # 空文字だとエラーになるので、デフォルト値を設定する
     if q == "":
         q = DEFAULT_QUERY
