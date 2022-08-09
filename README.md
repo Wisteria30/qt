@@ -26,3 +26,6 @@ env_variables:
   DEEPL_AUTH_KEY: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ```
 
+```bash
+gcloud app deploy
+```
